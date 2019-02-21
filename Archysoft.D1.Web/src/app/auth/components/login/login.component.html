@@ -1,0 +1,11 @@
+<form novalidate>
+  <mat-form-field style="width: 100%;">
+    <input matInput name="login" [(ngModel)]="model.login"  placeholder="Login">
+  </mat-form-field>
+
+  <mat-form-field style="width: 100%;">
+    <input type="password" matInput [(ngModel)]="model.password" name="password" placeholder="Password">
+  </mat-form-field>
+
+  <button type="button" mat-button (click)="login()">Login</button>
+</form>
